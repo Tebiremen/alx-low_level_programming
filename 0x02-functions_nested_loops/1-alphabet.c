@@ -9,7 +9,7 @@ void print_alphabet(void)
 {
 	char c = 'a';
 
-	white (c <= 'z')
+	while (c <= 'z')
 	{
 		_putchar(c);
 		c++;
