@@ -1,1 +1,1 @@
-My Read me
+Readme for static libraries
