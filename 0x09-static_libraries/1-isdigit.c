@@ -1,8 +1,19 @@
 #include "main.h"
 
-int main(void)
-{
-	_puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
-	return (0);
-}
+/**
+ * _isdigit - checks for digits
+ * @c: parameter
+ * Return: 0 or 1
+ */
 
+int _isdigit(int c)
+{
+	if (c >= 48 && c < 58)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
