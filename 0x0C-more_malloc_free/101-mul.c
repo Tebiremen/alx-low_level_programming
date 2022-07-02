@@ -77,14 +77,14 @@ void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 		k--;
 	}
 
-	while (mul != 0)
-	{
-		mul += a3[k] - '0';
-		a3[k] = (mul % 10) + '0';
-		mul /= 10;
-		k--;
-	}
-
+                while (mul != 0)
+		{
+			mul += a3[k] - '0';
+			a3[k] = (mul % 10) + '0';
+			mul /= 10;
+			k--;
+		}
+	
 	return (a3);
 }
 /**
@@ -141,8 +141,8 @@ int main(int argc, char *argv[])
 	}
 	for (i = len2 - 1, c = 0; i >= 0; i--)
 	{
-		tabres = mul_array(argv[1], len1, argv[2][i], tabres, (lenres - 1 - c));
-		c++;
+	tabres = mul_array(argv[1], len1, argv[2][i], tabres, (lenres - 1 - c));
+	c++;
 	}
 	print_array(tabres, lenres);
 	free(tabres);
